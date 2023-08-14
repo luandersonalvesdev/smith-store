@@ -11,7 +11,26 @@ const newProductCreatedReturn = {
   orderId: 3,
 }
 
+const allProductsReturn = [
+  {
+    name: "Martelo de Thor",
+    price: "30 peças de ouro",
+    orderId: 3,
+  },
+  {
+    name: "Martelo de Thor",
+    price: "30 peças de ouro",
+    orderId: 3,
+  },
+  {
+    name: "Martelo de Thor",
+    price: "30 peças de ouro",
+    orderId: 3,
+  },
+]
+
 export default {
   newProductCreated,
   newProductCreatedReturn,
+  allProductsReturn,
 }

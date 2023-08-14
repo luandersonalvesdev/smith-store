@@ -11,7 +11,7 @@ chai.use(chaiHttp);
 describe('POST /products', function () { 
   beforeEach(function () { sinon.restore(); });
 
-  it('que é possível criar um produto.', async function() {
+  it('can create a product.', async function() {
     // ARRANGE
     const newProduct = productMock.newProductCreated;
     const mockNewProductCreated = ProductModel.build(productMock.newProductCreatedReturn);
