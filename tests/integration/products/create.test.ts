@@ -26,4 +26,17 @@ describe('POST /products', function () {
     expect(response.body).to.haveOwnProperty('name');
     expect(response.body).to.haveOwnProperty('price');
   });
+
+  it("can't create a product with wrongs values.", async function() {
+    // ARRANGE
+    const newProduct = productMock.invalidNewProductCreated;
+
+    // ACT
+    const response = await chai.request(app).post('/products').send(newProduct);
+
+    // ASSERT
+    expect(response.status).to.be.equal(400);
+    expect(response.body).to.haveOwnProperty('message');
+    expect(response.body.message).to.be.equal('"name" is required');
+  });
 });
