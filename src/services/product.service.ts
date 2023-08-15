@@ -7,7 +7,6 @@ import productSchema from '../validation/productSchema';
 
 const validateProduct = (newProduct: ProductInputtableTypes): string => {
   const { error } = productSchema.validate(newProduct);
-  console.log(error?.details[0].type);
   return error ? error.message : '';
 };
 
