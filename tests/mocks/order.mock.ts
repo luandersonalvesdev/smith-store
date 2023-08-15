@@ -25,11 +25,34 @@ const orderList = [
 ];
 
 const oneOrder = {
-  "id": 3,
-  "userId": 2,
+  id: 3,
+  userId: 2,
+}
+
+const newOrder = {
+  userId: 1,
+  productIds: [4, 1],
+}
+
+const invalidNewOrder = {
+  productIds: [4, 1],
+}
+
+const notFoundUserIdNewOrder = {
+  userId: 0,
+  productIds: [4, 1],
+}
+
+const newOrderCreated = {
+  userId: 3,
+  id: 10,
 }
 
 export default {
   orderList,
   oneOrder,
+  newOrder,
+  newOrderCreated,
+  invalidNewOrder,
+  notFoundUserIdNewOrder,
 }
