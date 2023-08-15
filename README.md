@@ -7,11 +7,19 @@ Sequelize, JWT (Json Web Token), MSC (model, service and controller) software ar
 
 ## Get Started
   1. #### To run you just need [Docker](https://docs.docker.com/engine/install/ubuntu/) and [Docker Compose](https://docs.docker.com/compose/install/).
-  2. #### Clone this repository with: 
+  2. #### Clone this repository: 
   ```bash
-  git@github.com:luandersonalvesdev/smith-store.git
+  git@github.com:luandersonalvesdev/smith-store-api.git
   ```
-  3. #### Climb the containers with: 
+  3. #### Enter the folder: 
+  ```bash
+  cd smith-store-api
+  ```
+  4. #### Install dependecies: 
+  ```bash
+  npm i
+  ```
+  5. #### Climb the containers: 
   ```bash
   docker-compose up -d
   ```
